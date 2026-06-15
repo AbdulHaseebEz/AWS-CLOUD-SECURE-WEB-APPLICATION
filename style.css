@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background:
+    radial-gradient(circle at top, rgba(200, 169, 107, 0.12), transparent 35%),
+    linear-gradient(135deg, #411616, #281d1d 45%, #411616 100%);
+  color: #f7f2e8;
+  min-height: 100vh;
+  padding: 30px 20px 60px;
+}
+
+.name-tag {
+  position: fixed;
+  top: 20px;
+  right: 24px;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  color: #f7f2e8;
+  opacity: 0.9;
+  z-index: 1000;
+}
+
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.header {
+  margin-bottom: 42px;
+}
+
+.course-title {
+  font-family: 'PT Serif', serif;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #e6d5b3;
+  margin-bottom: 10px;
+  letter-spacing: 0.03em;
+  text-shadow: 0 0 18px rgba(200, 169, 107, 0.12);
+}
+
+.project-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #cfbe9c;
+  margin-bottom: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.main-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.05rem;
+  font-weight: 700;
+  color: #f7f2e8;
+  margin-bottom: 14px;
+}
+
+.subtitle {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #ddd1bb;
+}
+
+.input-section {
+  margin: 0 auto 42px;
+  text-align: center;
+}
+
+.input-section label {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #e6d5b3;
+  letter-spacing: 0.03em;
+}
+
+textarea {
+  width: 250%;
+  max-width: 760px;
+  min-height: 100px;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 18px;
+  border: 1px solid rgba(200, 169, 107, 0.35);
+  outline: none;
+  resize: vertical;
+  background: linear-gradient(145deg, #111111, #1a1a1a);
+  color: #f7f2e8;
+  font-size: 1rem;
+  line-height: 1.7;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+textarea::placeholder {
+  color: #9f927a;
+}
+
+textarea:focus {
+  border-color: #c8a96b;
+  box-shadow: 0 0 0 3px rgba(200, 169, 107, 0.14);
+}
+
+button {
+  margin-top: 22px;
+  padding: 14px 34px;
+  border: 1px solid #c8a96b;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #edd7ac, #e6d5b3, #b39c79);
+  color: #241e15;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 10px 24px rgba(200, 169, 107, 0.18);
+}
+
+button:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 14px 30px rgba(200, 169, 107, 0.28);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.status-message {
+  margin-top: 14px;
+  color: #e6d5b3;
+  font-size: 0.95rem;
+}
+
+.results-section {
+  margin-top: 40px;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.results-section h2 {
+  font-family: 'PT Serif', serif;
+  font-size: 2rem;
+  color: #e6c787;
+  margin-bottom: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.results-section h3 {
+  font-family: 'PT Serif', serif;
+  font-size: 1.3rem;
+  color: #f4efe5;
+  margin-top: 24px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(200, 169, 107, 0.25);
+  padding-bottom: 6px;
+}
+
+.result-block {
+  color: #f7f2e8;
+  line-height: 1.75;
+  font-size: 0.98rem;
+  padding-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+ul {
+  padding-left: 22px;
+  margin-top: 10px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+@media (max-width: 768px) {
+  .name-tag {
+    position: static;
+    text-align: right;
+    margin-bottom: 12px;
+    padding-right: 6px;
+  }
+
+  .page {
+    padding-top: 10px;
+  }
+
+  .course-title {
+    font-size: 2.25rem;
+  }
+
+  .main-title {
+    font-size: 1.55rem;
+  }
+
+  textarea,
+  .results-section {
+    max-width: 100%;
+  }
+}

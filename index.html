@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CS524 AI Text Analyzer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <p class="name-tag">By Mohammed Abdul Haseeb</p>
+
+  <div class="page">
+    <header class="header">
+      <h1 class="course-title">CS-524 Introduction to Cloud Computing</h1>
+      <h2 class="project-title">Final Project</h2>
+      <h2 class="main-title">NLP Secure Web Application</h2>
+      <p class="subtitle">
+        Enter text below to analyze for sentiment, entities,
+        key phrases and readability
+      </p>
+    </header>
+
+    <main>
+      <section class="input-section">
+        <label for="textInput"></label>
+        <textarea
+          id="textInput"
+          rows="8"
+          placeholder="Enter text here..."
+        ></textarea>
+
+        <button id="analyzeBtn">Analyze</button>
+        <p id="statusMessage" class="status-message"></p>
+      </section>
+
+      <section id="resultsSection" class="results-section hidden">
+        <h2>Analysis Results</h2>
+
+        <h3>Sentiment</h3>
+        <div id="sentimentResult" class="result-block"></div>
+
+        <h3>Entities</h3>
+        <div id="entitiesResult" class="result-block"></div>
+
+        <h3>Key Phrases</h3>
+        <div id="keyPhrasesResult" class="result-block"></div>
+
+        <h3>Text Statistics &amp; Readability</h3>
+        <div id="statsResult" class="result-block"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
