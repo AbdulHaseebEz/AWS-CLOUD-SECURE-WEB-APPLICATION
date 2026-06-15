@@ -2,6 +2,6 @@ This project is the building of an AI-powered secure web application on AWS by c
 This report shows implementation to show how the project from the initial setup stage to final deployment, monitoring, and testing. It explains what was configured, why that configuration was needed, and how the selected AWS services worked together to make the application function correctly. It also explains the NLP concepts used in the Lambda backend, the main challenges faced during implementation, and how those issues were resolved during the project.
 
 
-<img width="1800" height="759" alt="17p44" src="https://github.com/user-attachments/assets/ba1ffa16-b8d5-4887-bd5b-058ee1e6a287" />
+<img width="1800" height="800" alt="17p44" src="https://github.com/user-attachments/assets/ba1ffa16-b8d5-4887-bd5b-058ee1e6a287" />
 
 <img width="1867" height="982" alt="19p46" src="https://github.com/user-attachments/assets/a1327ae2-b3ef-4ba5-a557-d669547b71b8" />
